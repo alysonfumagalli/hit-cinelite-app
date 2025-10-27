@@ -9,6 +9,7 @@ Permite listar, buscar e visualizar detalhes de filmes em uma interface moderna,
 - **Redux Toolkit + RTK Query** — gerenciamento de estado e cache de API
 - **React Router** — controle de rotas entre listagem e detalhes
 - **TailwindCSS** — estilização rápida e responsiva
+- **Vercel** — deploy simplificado através da integração com o Git
 
 ## 🧱 Estrutura do projeto
 ```
@@ -62,9 +63,11 @@ Aplicação disponível em: https://hit-cinelite.vercel.app
 - **Debounce na busca**: melhora a performance e evita múltiplas requisições desnecessárias.
 - **TailwindCSS**: acelera o desenvolvimento visual e garante responsividade com baixo acoplamento ao JSX.
 - **React Router**: estrutura simples e eficaz para SPA, permitindo navegação fluida entre listagem e detalhes.
+- **Estrutura do Projeto**: organizada de forma modular, priorizando **clareza, isolamento de responsabilidades e escalabilidade**. Cada pasta representa um nível distinto de abstração dentro da aplicação.
+
 
 ## 🔧 Pontos de melhoria
 - Adicionar testes
 - Adicionar seções/páginas específicas (para filmes populares, em cartaz, futuros)
 - Adicionar _light mode_
-- Alterar arquitetura para FSD
+- Alterar arquitetura para FSD visando uma melhor escalabilidade
