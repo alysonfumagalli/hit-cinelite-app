@@ -1,5 +1,9 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-import type { MovieSummary, PaginatedResponse } from '../types/movie'
+import type {
+  MovieDetails,
+  MovieSummary,
+  PaginatedResponse,
+} from '../types/movie'
 
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY
 const BASE_URL = 'https://api.themoviedb.org/3'
@@ -21,7 +25,13 @@ export const tmdbAPI = createApi({
           : `/movie/popular?api_key=${API_KEY}&language=pt-BR&page=${page}`,
       }),
     }),
+    getMovieById: builder.query<MovieDetails, { movieId: number }>({
+      query: ({ movieId }) => ({
+        method: 'GET',
+        url: `/movie/${movieId}?api_key=${API_KEY}&language=pt-BR`,
+      }),
+    }),
   }),
 })
 
-export const { useGetPopularMoviesQuery } = tmdbAPI
+export const { useGetPopularMoviesQuery, useGetMovieByIdQuery } = tmdbAPI

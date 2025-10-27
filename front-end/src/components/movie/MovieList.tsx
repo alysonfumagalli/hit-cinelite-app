@@ -59,7 +59,7 @@ export function MovieList({ searchTerm, page, setPage }: MovieListProps) {
     <div className="flex flex-col items-center gap-4 p-4">
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 animate-fade-in-up">
         {data?.results?.map((movie: MovieSummary) => (
-          <MovieCard key={movie.id} movie={movie} />
+          <MovieCard key={movie.id} movie={movie} showTitle={true} />
         ))}
       </div>
 
