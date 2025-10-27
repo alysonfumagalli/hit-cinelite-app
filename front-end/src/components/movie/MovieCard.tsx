@@ -54,7 +54,9 @@ export function MovieCard({
           aria-label="Informações do filme"
         >
           <span>{releaseYear}</span>
-          {showRuntime && <span>{movie?.runtime} min</span>}
+          {showRuntime && 'runtime' in movie! && (
+            <span>{movie.runtime} min</span>
+          )}
           <span
             className="flex items-center"
             aria-label={`Avaliação ${movie?.vote_average.toFixed(1)} de 5`}
