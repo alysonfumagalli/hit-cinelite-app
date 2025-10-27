@@ -53,9 +53,11 @@ front-end/
 
 6 - Acesse no navegador: ```http://localhost:5173```
 
-## 🌐 Deploy
+## 🌐 Deploy e Figma
 
 Aplicação disponível em: https://hit-cinelite.vercel.app
+
+Design disponível em: https://www.figma.com/design/KqCYYvPYl8EUrrKS3GBzkY/CineLite
 
 ## 🧠 Decisões técnicas
 
