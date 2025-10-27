@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Main Colors */
+    --primary-color: #A855F7;
+    --accent-color: #00BFFF;
+    
+    /* Background Colors */
+    --background-primary-color: #070B13;
+    --background-secondary-color: #0B1219;
+    --border-color: #18252E;
+
+    /* Text Color */
+    --title-color: #F8FAFC;
+    --paragraph-color: #98A7B5;
+
+    /* Util Colors */
+    --error-color: #EB5757;
+    --star-color: #EDED49;
+  }
+}
