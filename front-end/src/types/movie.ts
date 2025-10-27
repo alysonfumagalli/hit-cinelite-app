@@ -12,3 +12,15 @@ export interface MovieSummary {
   vote_average: number
   release_date: string
 }
+
+export interface MovieGenre {
+  id: number
+  name: string
+}
+export interface MovieDetails extends MovieSummary {
+  overview: string
+  genres: MovieGenre[]
+  homepage: string
+  runtime: number
+  tagline: string
+}
